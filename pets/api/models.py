@@ -13,6 +13,8 @@ class AnimalClass(models.Model):
 
     class Meta:
         ordering = ('name',)
+        verbose_name = 'Класс'
+        verbose_name_plural = 'Классы животных'
 
     def __str__(self):
         return self.name
@@ -42,7 +44,7 @@ class Breed(models.Model):
             )
         ]
         ordering = ('name', 'animal_class',)
-        verbose_name = 'Порода'
+        verbose_name = 'Породу'
         verbose_name_plural = 'Породы'
 
     def __str__(self):
