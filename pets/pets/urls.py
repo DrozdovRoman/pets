@@ -6,7 +6,7 @@ from .yasg import urlpatterns as doc_urls
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    # path("api/", include('api.urls', namespace='api'))
+    path("api/", include('api.urls'))
 ]
 
 if settings.DEBUG:
